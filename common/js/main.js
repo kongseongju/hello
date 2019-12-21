@@ -5,7 +5,7 @@ function main(){
     
     var SECTION_TIME = 1250, // 화면 전환 시간
         CNT_TIME = 150, // 컨텐츠 영역 전환 시간
-        BG_TIME = 50, // 백그라운드 전환 시간
+        BG_TIME = 40, // 백그라운드 전환 시간
         $win = null, // 윈도우 객체
         $dom = null, // 돔 영역
         $section = null, // 메인 세션
@@ -52,9 +52,6 @@ function main(){
         // 윈도우 사이즈 초기화
         winView(0, 0, 500);
         
-        // 포스팅 박스 사이즈 조절
-        postingBox();
-
         // 메인 타이틀 텍스트 효과
         setTimeout(function(){
             if(moveing === false){
@@ -65,14 +62,12 @@ function main(){
         
         // 마우스 휠 이벤트
         $dom.on('mousewheel DOMMouseScroll', function(e){
-            if(!$(e.target).is('.box03 > .cnt02') && !$(e.target).is('.box03 > .cnt02 *')) {
-                if(e.originalEvent.detail){
-                    delta = e.originalEvent.detail * -40;
-                }else{
-                    delta = e.originalEvent.wheelDelta;
-                };
-                scroll(delta);
+            if(e.originalEvent.detail){
+                delta = e.originalEvent.detail * -40;
+            }else{
+                delta = e.originalEvent.wheelDelta;
             };
+            scroll(delta);
         });
         
         // 인디게이터 클릭 이벤트
@@ -102,7 +97,6 @@ function main(){
             timer = setTimeout(function(){
                 winAxis();
                 winView(top, left, 300);
-                postingBox();
             }, 150);
         });
         
@@ -129,11 +123,6 @@ function main(){
             scrollTop: x,
             scrollLeft: y
         }, time);
-    }
-
-    // 포스팅 박스 사이즈 조절
-    function postingBox(){
-        $('.box03 > .cnt02').height($win.height() - 124);
     }
     
     // 마우스 휠
@@ -344,7 +333,8 @@ function slideArr(){
 
 
 // 실행
-$(document).on('ready', function(){
+$(function(){
     main();
     slideArr();
 });
+    

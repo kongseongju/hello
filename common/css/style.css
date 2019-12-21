@@ -39,7 +39,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 /* layout */
 .hidden, legend, caption{position:absolute;left:-9999px;text-indent:-9999px;font-size:0;line-height:0}
 header h1.logo{position:fixed;top:20px;left:20px;z-index:20}
-header h1.logo a{display:block;font-size:20px;font-weight:bold;color:#fff;}
+header h1.logo a{display:block;font-size:15px;font-weight:bold;color:#fff;}
 header h1.logo.type01 a{color:#fff}
 header h1.logo.type02 a{color:#cc66ff}
 header h1.logo.type03 a{color:#33ccff}
@@ -56,7 +56,7 @@ header h1.logo.type04 a{color:#cc66ff}
 .main .indi{position:fixed;bottom:20px;right:20px;z-index:10}
 .main .indi li{margin-top:5px}
 .main .indi li:first-child{margin-top:0}
-.main .indi li a{display:block;position:relative;text-align:right;font-weight:bold;letter-spacing:1px;opacity:.5;color:#fff}
+.main .indi li a{display:block;position:relative;text-align:right;font-size:15px;font-weight:bold;opacity:.5;color:#fff}
 .main .indi.type01 li a{color:#fff}
 .main .indi.type02 li a{color:#cc66ff}
 .main .indi.type03 li a{color:#33ccff}
@@ -177,50 +177,28 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box02 .cnt01 > div:nth-child(odd).on > .tit{top:55%}
 .main .box02 .cnt01 > div:nth-child(even).on > span{top:-100%}
 
-.main .box03{float:right;padding:20px 90px 74px}
+.main .box03{float:right}
 .main .box03 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box03.png) no-repeat left center/2500px auto fixed}
+.main .box03 .cnt01{position:relative;z-index:10;padding:50px 20px}
+.main .box03 .cnt01 h3{margin-top:20px;font-size:25px}
+.main .box03 .cnt01 > div{opacity:0;}
+.main .box03 .cnt01 > div.on{margin-left:0;opacity:1}
+.main .box03 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold}
+.main .box03 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px}
+.main .box03 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;left:10px}
 
-
-
-
-
-
-
-.main .box04{float:left;padding:20px}
+.main .box04{float:left;padding:50px 20px}
 .main .box04 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box04.png) no-repeat left center/2500px auto fixed}
 .main .box04 article{position:relative;z-index:10}
-.main .box04 .cnt01{position:relative;top:50%;transform:translateY(-50%);padding:0 80px}
+.main .box04 .cnt01{position:relative}
 .main .box04 .cnt01 > div{opacity:0}
 .main .box04 .cnt01 > div.on{margin-left:0;opacity:1}
-.main .box04 .cnt01 h3{margin-bottom:20px;font-size:30px;text-align:center}
-
-.main .box04 form{width:100%}
-.main .box04 fieldset{font-size:0}
-.main .box04 fieldset input[type=text]{margin-top:10px;border:2px solid #000;box-sizing:border-box;padding:0 10px;width:100%;height:50px;border-radius:25px;font-size:15px;font-weight:bold;background-color:rgba( 255, 255, 255, 1);color:#000}
-.main .box04 fieldset input[type=text]::-webkit-input-placeholder{color:#000}
-.main .box04 fieldset input[type=text]::-ms-input-placeholder{color:#000}
-.main .box04 fieldset input[type=text]::-moz-placeholder{color:#000}
-.main .box04 fieldset input[type=text].name{margin:10px 2% 0 0;width:49%}
-.main .box04 fieldset input[type=text].mail{margin-top:10px;width:49%}
-.main .box04 fieldset input[type=text]:focus, .box04 fieldset textarea:focus{outline:none}
-.main .box04 fieldset textarea{margin-top:10px;padding:10px;border:2px solid #000;box-sizing:border-box;width:100%;height:250px;border-radius:25px;font-size:15px;resize:none;font-weight:bold;background-color:rgba( 255, 255, 255, 1);color:#000}
-.main .box04 fieldset textarea::-webkit-input-placeholder{color:#000}
-.main .box04 fieldset textarea::-ms-input-placeholder{color:#000}
-.main .box04 fieldset textarea::-moz-placeholder{color:#000}
-.main .box04 .sendBtn{display:block;float:right;margin-top:10px;box-sizing:border-box;border-radius:22px;width:100px;height:44px;line-height:42px;font-size:15px;text-align:center;font-weight:bold;cursor:pointer;background-color:#cc66ff;color:#000}
-
-.main .box04 .copy{margin-top:10px}
-.main .box04 .copy p{font-size:14px;line-height:14px}
-.main .box04 .social{margin-top:10px}
-.main .box04 .social ul:after{content:'';display:block;clear:both}
-.main .box04 .social ul li{float:left;margin-left:5px}
-.main .box04 .social ul li:first-child{margin-left:0}
-.main .box04 .social ul li a{display:block;width:30px;height:30px;text-indent:-9999px;font-size:0;line-height:0;background:url(../images/common/ico_social.png) no-repeat 0 0/90px 30px}
-.main .box04 .social ul li:nth-child(2) a{background-position:-30px 0}
-.main .box04 .social ul li:nth-child(3) a{background-position:-60px 0}
-.main .box04 .admin{margin-top:20px}
-.main .box04 .admin a{margin-left:5px;color:#fff}
-.main .box04 .admin a:first-child{margin-left:0}
+.main .box04 .cnt01 h3{margin-top:20px;font-size:25px}
+.main .box04 .cnt01 > div{opacity:0;}
+.main .box04 .cnt01 > div.on{margin-left:0;opacity:1}
+.main .box04 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold}
+.main .box04 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px}
+.main .box04 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;left:10px}
 
 /* Tablet 
 @media all and (min-width:768px) and (max-width:1023px) {
