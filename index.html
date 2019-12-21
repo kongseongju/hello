@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>kongseongju</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="common/images/common/favicon.ico" /> -->
+    <link rel="stylesheet" href="common/css/font.css">
+    <link rel="stylesheet" href="common/css/style.css">
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="common/js/main.js"></script>
+    <script src="common/js/jquery-ui.min.js"></script>
+    <!-- <script type="text/javascript">
+        //<![CDATA[
+        document.getElementsByTagName("html")[0].style.overflowY = "hidden";
+        function switchScreen() {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("loading_body").style.display = "";
+            document.getElementsByTagName("html")[0].style.overflowY = "scroll";
+        }
+        //]]>
+    </script> -->
+</head>
+<body>
+    <!-- <div id="loading">
+        <img src="common/images/common/loading_type01.gif" alt="loading..">
+    </div>
+    <div id="loading_body" style="display:none;"></div> -->
+    <div class="wrap">
+        <header>
+            <h1 class="logo"><a href="#">KONGSEONGJU</a></h1>
+        </header>
+        <div class="main">
+            
+            <section class="box01">
+                <article>
+                    <div class="tit">
+                        <h2 class="hidden">프론트엔드, UI개발, 웹, 코딩, Javascript, HTML5, CSS3</h2>
+                        <h3 class="top">
+                            <img src="./common/images/main/txt_idea.png" alt="idea" class="txt" />
+                            <img src="./common/images/main/txt_+.png" alt="" class="plus" />
+                        </h3>
+                        <h3 class="bottom">
+                            <img src="./common/images/main/txt_code.png" alt="code" class="txt" />
+                            <img src="./common/images/main/txt_+.png" alt="" class="plus" />
+                        </h3>
+                        <h3 class="center">
+                            <span class="txtL">IMPLEMENT</span>
+                            <span class="txtR">AN IDEA</span>
+                        </h3>
+                    </div>
+                    <span class="titBg"><!-- title bg --></span>
+                    <video class="mainVideo" autoplay loop muted>
+                        <source src="./common/video/main_video03.mp4" type="video/mp4"> 
+                        <source src="./common/video/main_video03.webm" type="video/webm"> 
+                        <p>IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</p>
+                    </video>
+                </article>
+            </section>
+    
+            <section class="box02">
+                <article class="cnt01 move">
+                    <div>
+                        <div class="ico">
+                            <img src="./common/images/main/box02_ico01_01.png" alt="" />
+                            <img src="./common/images/main/box02_ico01_02.png" alt="" />
+                        </div>  
+                        <div class="tit">
+                            <h3>USER EXPERIENCE</h3>
+                            <p>사용자 관점에서 고민하고<br /> 구현하는것을 좋아합니다</p>
+                        </div>
+                        <span><!-- txt bg --></span>
+                    </div>
+                    <div>
+                        <div class="ico">
+                            <img src="./common/images/main/box02_ico02_01.png" alt="" />
+                            <img src="./common/images/main/box02_ico02_02.png" alt="" />
+                        </div> 
+                        <div class="tit">
+                            <h3>CONCISE CODE</h3>
+                            <p>간결하고 유연한<br /> 코드를 지향합니다</p>
+                        </div>
+                        <span><!-- txt bg --></span>
+                    </div>
+                    <div>
+                        <div class="ico">
+                            <img src="./common/images/main/box02_ico03_01.png" alt="" />
+                            <img src="./common/images/main/box02_ico03_02.png" alt="" />
+                        </div> 
+                        <div class="tit">
+                            <h3>DYNAMIC MOTION</h3>
+                            <p>다채로운 웹컨텐츠를<br /> 추구합니다</p>
+                        </div>
+                        <span><!-- txt bg --></span>
+                    </div>
+                    <div>
+                        <div class="ico">
+                            <img src="./common/images/main/box02_ico04_01.png" alt="" />
+                            <img src="./common/images/main/box02_ico04_02.png" alt="" />
+                        </div> 
+                        <div class="tit">
+                            <h3>EXPERIENCE</h3>
+                            <p>다년의 경험을 토대로<br /> 문제를 해결합니다</p>
+                        </div>
+                        <span><!-- txt bg --></span>
+                    </div>
+                </article>
+    
+                <div class="bg"><!-- bg --></div>
+            </section>
+    
+            <section class="box03">
+                <article class="cnt02 move">
+
+                </article>
+                <div class="bg"><!-- bg --></div>
+            </section>
+    
+            <section class="box04">
+                <article class="cnt01 move">
+                    <div><h3>CONTACT US</h3></div>
+                    <div>
+                        <form method='post' name="MailWriteForm" action="<?=$_SERVER['PHP_SELF']?>">
+                            <input type=hidden name='f_mailsend' value='1'>
+                            <fieldset>
+                                <legend>Contact Us</legend>
+                                <?
+                                    if($to_mail_set and $to_name_set){
+                                        echo "<input type=hidden name='mail_to_email' value='$to_mail_set'>";
+                                        echo "<input type=hidden name='mail_to_name' value='$to_name_set'>";
+                                    }else{
+                                ?>
+                                    <input type=text name="mail_to_name" />
+                                    <input type=text name="mail_to_email" />
+                                <?}?>
+                                <input type="text" title="Name" class="name" name="mail_from_name" placeholder="Name" />
+                                <input type="text" title="E-Mail" class="mail" name="mail_from_email" placeholder="E-Mail" />
+                                <!--
+                                <input type=hidden name="add_title_1" value="입력란 추가1" />
+                                <input type=text name="add_value_1" />
+                                -->
+                                <input type="text" title="Subject" name="mail_subject" placeholder="Title" />
+                                <textarea rows="5" cols="50" title="Message" name="mail_body" placeholder="Contents"></textarea>
+                            </fieldset>
+                        </form>
+                        <a onclick="alert('준비중입니다.')" class="sendBtn">SEND</a>
+                        <!-- <a onclick="javascript:form_mail_submit()" class="sendBtn">SEND</a> -->
+                    </div>
+                    <div class="copy">
+                        <p>COPYRIGHT © 2018 KONGSEONGJU ALL RIGHTS RESERVED</p>
+                    </div>
+                    <div class="social">
+                        <p class="hidden">깃허브, 코드펜, 워드프레스 블로그 주소</p>
+                        <ul>
+                            <li><a href="https://github.com/kongseongju" target="_blank" title="새창열기">Github</a></li>
+                            <li><a href="https://codepen.io/kongseongju" target="_blank" title="새창열기">Codepen</a></li>
+                            <li><a href="#none" onclick="alert('준비중입니다.')">Wordpress</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="admin">
+                        <?php if ($is_member) {  ?>
+                        <?php if ($is_admin) {  ?>
+                        <a href="<?php echo G5_ADMIN_URL ?>" class="admin">Admin</a>
+                        <?php }  ?>
+                        <a href="<?php echo G5_BBS_URL ?>/logout.php" class="admin">Logout</a>
+                        <?php } else {  ?>
+                        <a href="<?php echo G5_BBS_URL ?>/login.php" class="admin">Login</a>
+                        <?php }  ?>
+                    </div> -->
+                </article>
+                <div class="bg"><!-- bg --></div>
+            </section>
+    
+            <div id="aside">
+                <?php echo visit('theme/basic'); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+            </div>
+    
+            <ul class="indi">
+                <li><a href="#none">HOME</a></li>
+                <li><a href="#none">ABOUT</a></li>
+                <li><a href="#none">BLOG</a></li>
+                <li><a href="#none">CONTACT</a></li>
+            </ul>
+    
+            <aside class="slideArr">
+                <a href="#none">다음 페이지</a>
+            </aside>
+    
+        </div>
+    </div>
+
+</body>
+</html>
+
+
