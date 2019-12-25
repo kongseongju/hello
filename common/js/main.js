@@ -342,7 +342,11 @@ $(function(){
 // 모바일 감지
 var filter = "win16|win32|win64|macintel|mac|"; 
 if(navigator.platform){
+
     if(filter.indexOf(navigator.platform.toLowerCase()) >= 0){
+
         alert("해당 페이지는 PC에 최적화 되어있습니다.");
+        
+    }else{
     };
 };
