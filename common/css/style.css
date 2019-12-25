@@ -164,8 +164,8 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
     }
 }
 .main .box02 .cnt01 > div > .tit{margin-top:-20px;font-weight:bold;opacity:0}
-.main .box02 .cnt01 > div > .tit h3{font-size:22px;}
-.main .box02 .cnt01 > div > .tit p{margin-top:6px;font-size:14px;line-height:18px;}
+.main .box02 .cnt01 > div > .tit h3{font-size:22px;color:#660000}
+.main .box02 .cnt01 > div > .tit p{margin-top:6px;font-size:14px;line-height:18px;color:#660000}
 .main .box02 .cnt01 > div > span{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255, 255, 255, 1)}
 .main .box02 .cnt01 > div.on > .ico{top:0;transition:1s;opacity:1}
 .main .box02 .cnt01 > div.on > .tit{margin-top:10px;opacity:1;transition:1s}
@@ -177,9 +177,11 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box03 .cnt01 h3{margin-top:20px;font-size:25px;color:#fff}
 .main .box03 .cnt01 > div{margin-left:30px;opacity:0;}
 .main .box03 .cnt01 > div.on{margin-left:0;opacity:1}
-.main .box03 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold;color:#fff}
-.main .box03 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px;color:#fff}
-.main .box03 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;left:10px}
+.main .box03 .cnt01 > div.type01{margin:10px 0 0 20px;font-size:20px;font-weight:bold;color:#fff}
+.main .box03 .cnt01 > div.type02{margin:5px 0 0 20px;font-size:16px;font-weight:bold;color:#fff}
+.main .box03 .cnt01 > div.type03{margin:0 0 5px 20px;font-size:11px;color:#fff}
+.main .box03 .cnt01 > div.type04{position:relative;margin:0 0 0 10px;padding-left:20px;font-size:13px;line-height:20px;color:#fff}
+.main .box03 .cnt01 > div.type04:before{content:'·';position:absolute;top:0;left:10px}
 
 .main .box04{float:left;padding:50px 20px}
 .main .box04 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box04.png) no-repeat left center/2500px auto fixed}
@@ -187,12 +189,13 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box04 .cnt01{position:relative;float:right}
 .main .box04 .cnt01 > div{opacity:0;text-align:right}
 .main .box04 .cnt01 > div.on{margin-left:0;opacity:1}
-.main .box04 .cnt01 h3{margin-top:20px;font-size:25px}
-.main .box04 .cnt01 > div{margin-right:30px;opacity:0;}
+.main .box04 .cnt01 h3{margin:20px 0 20px;font-size:25px;color:#660000}
+.main .box04 .cnt01 > div{margin-right:50px;opacity:0;}
 .main .box04 .cnt01 > div.on{margin-right:0;opacity:1}
-.main .box04 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold}
-.main .box04 .cnt01 > div.txt{position:relative;margin-top:5px;padding-right:20px;font-size:13px}
-.main .box04 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;right:10px}
+.main .box04 .cnt01 > div.type01{margin-top:15px;font-size:13px;font-weight:bold;color:#660000}
+.main .box04 .cnt01 > div.type02{position:relative;padding-right:20px;font-size:13px;line-height:20px}
+.main .box04 .cnt01 > div.type02 a{color:#660000}
+.main .box04 .cnt01 > div.type02:before{content:'·';position:absolute;top:0;right:10px;color:#660000}
 
 /* Tablet 
 @media all and (min-width:768px) and (max-width:1023px) {
