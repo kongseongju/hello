@@ -13,7 +13,7 @@
 }
 
 /* reset */
-html{overflow:hidden;min-width:768px;height:100%}
+html{overflow:hidden;height:100%}
 body{margin:0;padding:0;height:100%;font-size:15px;line-height:1.4;font-family:'Noto Sans Korean', dotum, sans-serif}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img{margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6{font-size:15px;font-family:'Noto Sans Korean', dotum, sans-serif}
@@ -175,7 +175,7 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box03 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box03.png) no-repeat left center/2500px auto fixed}
 .main .box03 .cnt01{position:relative;z-index:10;padding:50px 20px}
 .main .box03 .cnt01 h3{margin-top:20px;font-size:25px;color:#fff}
-.main .box03 .cnt01 > div{opacity:0;}
+.main .box03 .cnt01 > div{margin-left:30px;opacity:0;}
 .main .box03 .cnt01 > div.on{margin-left:0;opacity:1}
 .main .box03 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold;color:#fff}
 .main .box03 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px;color:#fff}
@@ -184,15 +184,15 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box04{float:left;padding:50px 20px}
 .main .box04 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box04.png) no-repeat left center/2500px auto fixed}
 .main .box04 article{position:relative;z-index:10}
-.main .box04 .cnt01{position:relative}
-.main .box04 .cnt01 > div{opacity:0}
+.main .box04 .cnt01{position:relative;float:right}
+.main .box04 .cnt01 > div{opacity:0;text-align:right}
 .main .box04 .cnt01 > div.on{margin-left:0;opacity:1}
 .main .box04 .cnt01 h3{margin-top:20px;font-size:25px}
-.main .box04 .cnt01 > div{opacity:0;}
-.main .box04 .cnt01 > div.on{margin-left:0;opacity:1}
+.main .box04 .cnt01 > div{margin-right:30px;opacity:0;}
+.main .box04 .cnt01 > div.on{margin-right:0;opacity:1}
 .main .box04 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold}
-.main .box04 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px}
-.main .box04 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;left:10px}
+.main .box04 .cnt01 > div.txt{position:relative;margin-top:5px;padding-right:20px;font-size:13px}
+.main .box04 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;right:10px}
 
 /* Tablet 
 @media all and (min-width:768px) and (max-width:1023px) {
@@ -201,6 +201,6 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 
 /* mobile */
 @media all and (max-width:768px) {
-    html{overflow:auto}
+    
 }
 
