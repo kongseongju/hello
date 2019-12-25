@@ -231,7 +231,7 @@ function main(){
                 left: '100%',
                 right: 'initial',
                 opacity: 0,
-                backgroundColor: '#33ccff'
+                backgroundColor: '#006699'
             });
             $titTop.removeClass('on');
             $titCenter.children('span').removeClass('on');
@@ -267,7 +267,7 @@ function main(){
             setTimeout(function(){
                 $titBg.animate({
                     margin: '23px 0px 0 138px',
-                    backgroundColor: '#cc66ff'
+                    backgroundColor: '#99ccff'
                 }, 250, 'easeOutQuart');
                 move5();
             }, 150);

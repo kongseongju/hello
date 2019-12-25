@@ -41,9 +41,9 @@ a{text-decoration:none;font-weight:bold;color:#333}
 header h1.logo{position:fixed;top:20px;left:20px;z-index:20}
 header h1.logo a{display:block;font-size:15px;font-weight:bold;color:#fff;}
 header h1.logo.type01 a{color:#fff}
-header h1.logo.type02 a{color:#cc66ff}
-header h1.logo.type03 a{color:#33ccff}
-header h1.logo.type04 a{color:#cc66ff}
+header h1.logo.type02 a{color:#cc9999}
+header h1.logo.type03 a{color:#99ccff}
+header h1.logo.type04 a{color:#006699}
 
 .wrap{position:relative;width:200%;min-width:1000px;height:100%}
 .main{width:100%;height:100%;background-color:#000}
@@ -58,9 +58,9 @@ header h1.logo.type04 a{color:#cc66ff}
 .main .indi li:first-child{margin-top:0}
 .main .indi li a{display:block;position:relative;text-align:right;font-size:15px;font-weight:bold;opacity:.5;color:#fff}
 .main .indi.type01 li a{color:#fff}
-.main .indi.type02 li a{color:#cc66ff}
-.main .indi.type03 li a{color:#33ccff}
-.main .indi.type04 li a{color:#cc66ff}
+.main .indi.type02 li a{color:#006699}
+.main .indi.type03 li a{color:#99ccff}
+.main .indi.type04 li a{color:#006699}
 .main .indi li.on a{opacity:1}
 .main .indi li.on a:before{content:'·';position:relative;top:-2px;vertical-align:middle;font-size:25px;line-height:15px}
 
@@ -130,21 +130,21 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
 .main .box01 .tit h3.center{top:100px;left:4px;width:100%;text-align:center;font-size:30px;font-weight:bold;letter-spacing:18px;opacity:.3}
 .main .box01 .tit h3.center span{opacity:0}
 .main .box01 .tit h3.center span.on{opacity:1;transition:1s}
-.main .box01 .titBg{content:'';display:block;position:absolute;top:50%;left:100%;z-index:10;margin-top:-138px;border-radius:60px;width:100%;height:120px;background:#33ccff;opacity:0}
+.main .box01 .titBg{content:'';display:block;position:absolute;top:50%;left:100%;z-index:10;margin-top:-138px;border-radius:60px;width:100%;height:120px;background:#006699;opacity:0}
 .main .box01:after{content:'';position:absolute;width:100%;height:100%;opacity:.8;
-    background:-webkit-linear-gradient(left top, #33ccff, #cc66ff);
-    background:-moz-linear-gradient(left top, #33ccff, #cc66ff);
-    background:-ms-linear-gradient(left top, #33ccff, #cc66ff);
-    background:-o-linear-gradient(left top ,#33ccff, #cc66ff);
+    background:-webkit-linear-gradient(left top, #006699, #99ccff);
+    background:-moz-linear-gradient(left top, #006699, #99ccff);
+    background:-ms-linear-gradient(left top, #006699, #99ccff);
+    background:-o-linear-gradient(left top ,#006699, #99ccff);
 }
 .main .box01 .mainVideo{position:absolute;margin:-540px 0 0 -960px;top:50%;left:50%}
 
 .main .box02{float:right}
 .main .box02 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box02.png) no-repeat left center/2500px auto fixed}
-.main .box02 .cnt01{position:relative;height:100%;z-index:10}
+.main .box02 .cnt01{position:relative;float:right;width:700px;height:100%;z-index:10}
 .main .box02 .cnt01:after{content:'';display:block;clear:both}
-.main .box02 .cnt01 > div{float:left;position:relative;width:25%;height:100%;text-align:center}
-.main .box02 .cnt01 > div > .ico{position:absolute;top:50%;left:50%;z-index:10;margin:-50px 0 0 -65px;width:130px;height:100px}
+.main .box02 .cnt01 > div{float:left;position:relative;margin-top:100px;padding:0 0 0 150px;width:350px;height:100px;text-align:left}
+.main .box02 .cnt01 > div > .ico{position:absolute;top:0;left:0;z-index:10;width:130px;height:100px;opacity:0}
 .main .box02 .cnt01 > div:nth-child(1) > .ico img:nth-child(1){position:absolute;top:0;left:15px}
 .main .box02 .cnt01 > div:nth-child(1) > .ico img:nth-child(2){position:absolute;top:15px;left:30px}
 .main .box02 .cnt01 > div:nth-child(2) > .ico img:nth-child(1){position:absolute;top:21px;left:0}
@@ -164,27 +164,22 @@ header h1.logo a, header .navBtn > span, .main .indi li a, .main .slideArr a, .m
         transform: rotate(359deg);
     }
 }
-.main .box02 .cnt01 > div > .tit{position:absolute;top:50%;left:50%;z-index:10;transform:translate(-50%, -50%);width:100%;font-weight:bold;opacity:0}
-.main .box02 .cnt01 > div > .tit h3{font-size:25px;}
-.main .box02 .cnt01 > div > .tit p{margin-top:10px;font-size:16px}
+.main .box02 .cnt01 > div > .tit{font-weight:bold;opacity:0}
+.main .box02 .cnt01 > div > .tit h3{font-size:22px;}
+.main .box02 .cnt01 > div > .tit p{margin-top:6px;font-size:14px;line-height:18px;}
 .main .box02 .cnt01 > div > span{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(255, 255, 255, 1)}
-.main .box02 .cnt01 > div.on > .ico{transition:1s}
+.main .box02 .cnt01 > div.on > .ico{transition:1s;opacity:1}
 .main .box02 .cnt01 > div.on > .tit{opacity:1;transition:1s}
 .main .box02 .cnt01 > div.on > span{top:100%;transition:.5s;opacity:0}
-.main .box02 .cnt01 > div:nth-child(even).on > .ico{top:60%}
-.main .box02 .cnt01 > div:nth-child(odd).on > .ico{top:40%}
-.main .box02 .cnt01 > div:nth-child(even).on > .tit{top:45%}
-.main .box02 .cnt01 > div:nth-child(odd).on > .tit{top:55%}
-.main .box02 .cnt01 > div:nth-child(even).on > span{top:-100%}
 
 .main .box03{float:right}
 .main .box03 > .bg{position:absolute;top:0;left:0;width:100%;height:100%;background:url(../images/main/bg_box03.png) no-repeat left center/2500px auto fixed}
 .main .box03 .cnt01{position:relative;z-index:10;padding:50px 20px}
-.main .box03 .cnt01 h3{margin-top:20px;font-size:25px}
+.main .box03 .cnt01 h3{margin-top:20px;font-size:25px;color:#fff}
 .main .box03 .cnt01 > div{opacity:0;}
 .main .box03 .cnt01 > div.on{margin-left:0;opacity:1}
-.main .box03 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold}
-.main .box03 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px}
+.main .box03 .cnt01 > div.tit{margin-top:20px;font-size:18px;font-weight:bold;color:#fff}
+.main .box03 .cnt01 > div.txt{position:relative;margin-top:5px;padding-left:20px;font-size:13px;color:#fff}
 .main .box03 .cnt01 > div.txt:before{content:'·';position:absolute;top:0;left:10px}
 
 .main .box04{float:left;padding:50px 20px}
